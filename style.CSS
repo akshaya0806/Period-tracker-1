@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  width: 320px;
+  text-align: center;
+}
+
+input, button {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.calendar-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.day {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: white;
+}
+
+.green { background-color: green; }
+.orange { background-color: orange; }
+.red { background-color: red; }
+
+#trackerSection {
+  display: none;
+}
+
+#predictionResult {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #d63384;
+}

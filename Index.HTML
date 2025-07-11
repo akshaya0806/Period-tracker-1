@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Period Tracker App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Login Section -->
+    <div id="loginSection">
+      <h2>Login</h2>
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email ID" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="number" id="age" placeholder="Age" required>
+      <button onclick="startTracking()">Start Tracking</button>
+    </div>
+
+    <!-- Tracker Section -->
+    <div id="trackerSection">
+      <h2>Welcome, <span id="userNameDisplay"></span>!</h2>
+      <label for="lastDate">Last Period Start Date:</label>
+      <input type="date" id="lastDate">
+      <button onclick="calculatePrediction()">Predict Period</button>
+
+      <div id="predictionResult"></div>
+
+      <div id="calendar" class="calendar-grid"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
